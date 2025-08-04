@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { nanoid } from 'nanoid'
 const Create = (props) => {
     let Notes = props.Notes
     let setNotes = props.setNotes
@@ -10,9 +11,12 @@ const Create = (props) => {
     const SubmitHandler = (e) => {
         e.preventDefault()
         let newnotes = {
+            id:nanoid(),
             title: Title,
             description: description,
         }
+        console.log(newnotes);
+        
         let copynotes = [...Notes, newnotes]
         setNotes(copynotes)
     }
@@ -35,8 +39,7 @@ const Create = (props) => {
                         className='outline-none text mb-2 w-[20%] h-[10%]'
                         placeholder='notes' />
                     <br />
-                    <button
-                        className='bg-blue-300 border-blue-300 border mb-2 rounded py-1 px-2 '>Submit</button>
+                    <button className='bg-blue-300 border-blue-300 border mb-2 rounded py-1 px-2 '>Submit</button>
                 </form>
             </div>
         </div>
