@@ -1,0 +1,3 @@
+this is my notes app in which i use two way binding(onChange,value) and props
+i want to make another project like todo list i think in this i use react hook form (register, handlesubmit , reset , formstate :error) in place of two way binding and i use context Api in place of props 
+becouse props move the data only from parent to child but context move the data from parent to grand child or grand grand grand child...
