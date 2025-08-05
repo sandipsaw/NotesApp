@@ -1,3 +1,5 @@
 this is my notes app in which i use two way binding(onChange,value) and props
-i want to make another project like todo list i think in this i use react hook form (register, handlesubmit , reset , formstate :error) in place of two way binding and i use context Api in place of props 
-becouse props move the data only from parent to child but context move the data from parent to grand child or grand grand grand child...
+i want to make another project like todo list i think in this i use react hook form (register, handlesubmit , reset , formstate :error) in place of two way binding.
+in two way binding we use e.prevent default to stop to reload the page and in react hook form we use handlesubmit this automatically stop the reloding the page reset is use to reset the form data and make empty the input 4
+by the help of formstate : error if any user not enter any information(title) in the input then due to this error it give message please enter proper information
+and i use context Api in place of props  becouse props move the data only from parent to child but context move the data from parent to grand child or grand grand grand child...
